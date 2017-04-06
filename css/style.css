@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:"Hiragino Sans GB", 冬青黑体, "Hiragino Kaku Gothic ProN", "Microsoft Yahei", Simsun, Arial, Helvetica, sans-serif,微软雅黑;
+}
+body {
+    background: url("../images/dot_bg.png");
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+.author,.downArrow,.title,.smallTitle,.endTitle,.show,.job  {
+    text-align: center;
+}
+.title,.endTitle {
+    font-family: 方正兰亭超细黑简体,微软雅黑;
+}
+.title {
+    margin-top: 30px;
+    font-size: 24px;
+}
+.smallTitle {
+    margin: 30px 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+.endTitle {
+    margin: 80px;
+    font-size: 30px;
+}
+.cover {
+    background-color: #ffffff;
+    width: 65%;
+    height: 760px;
+    margin: 0 auto;
+}
+.cover_con {
+    display: inline-block;
+    width: 100%;
+}
+.logo {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 250px;
+    position: relative;
+    perspective: 300px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+}
+.logo img {
+    width: 100%;
+    transition: all 2s;
+    animation: myanimate 2s;
+    -webkit-animation: myanimate 2s;
+    -moz-animation: myanimate 2s;
+    -ms-animation: myanimate 2s;
+    -o-animation: myanimate 2s;
+}
+.logo img {
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+}
+.logo:hover img {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+}
+.logo:hover img {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+}
+
+@keyframes myanimate {
+    0%{
+        transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+    }
+}
+@-webkit-keyframes myanimate {
+    0%{
+        transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+    }
+}
+.author {
+    margin-top: 50px;
+    font-size: 14px;
+}
+/*.author a:hover {
+    color: red;
+}*/
+.downArrow,.downArrow2,.downArrow3 {
+    display: block;
+}
+.downArrow {
+    margin-top: 150px;
+}
+.downArrow2,.downArrow3 {
+    margin-top: 30px;
+}
+.job {
+    margin-top: 10px;
+}
+.show img {
+    width: 65%;
+    cursor: pointer;
+}
+.back {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background: url("../images/icon_back.png") no-repeat;
+    z-index: 1;
+}
+.downArrow1 {
+    opacity: 0;
+}
+@media all and (max-width: 799px) {
+    .cover {
+        width: 100%;
+        height: 300px;
+    }
+    .show img {
+        width: 100%;
+    }
+    .logo {
+        margin-top: 110px;
+    }
+    .author {
+        margin-top: 20px;
+        font-size: 8px;
+    }
+    .downArrow {
+        margin-top: 50px;
+    }
+    .title {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .smallTitle {
+        margin: 20px 0;
+        font-weight: normal;
+        font-size: 8px;
+    }
+    .endTitle {
+        margin: 50px;
+        font-size: 10px;
+    }
+    .job {
+        margin-top: 5px;
+        font-size: 8px;
+    }
+    .back {
+        display: none;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background: url("../images/icon_back.png") no-repeat;
+        background-size: 50px 50px;
+        z-index: 1;
+    }
+}
